@@ -1,0 +1,345 @@
+.crimson-text-regular {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.crimson-text-semibold {
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.crimson-text-bold {
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.crimson-text-regular-italic {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.crimson-text-semibold-italic {
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.crimson-text-bold-italic {
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+.athiti-extralight {
+  font-family: "Athiti", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.athiti-light {
+  font-family: "Athiti", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.athiti-regular {
+  font-family: "Athiti", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.athiti-medium {
+  font-family: "Athiti", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.athiti-semibold {
+  font-family: "Athiti", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.athiti-bold {
+  font-family: "Athiti", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h2{
+  color:white;
+  font-size:3em;
+  font-family:crimson-text;
+  text-align: center;
+  margin-top: 35px;
+}
+h3{
+  font-size:1.8em;
+  color:white;
+  font-family:crimson-text;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:20px;
+  background-color:rgb(30, 26, 39);;
+  font-family: athiti;
+}
+
+
+nav img {
+  height: 50px; 
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+  font-family:athiti;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color:#555;
+}
+#first{
+  width: 100%;      /* Makes the image fill the width of its container */
+  height: auto;     /* Adjusts height to maintain the image's aspect ratio */
+  max-height: 510.9px; /* Limits the maximum height, adjust as needed */
+  object-fit: cover; /* Crops the image to fill the height if necessary */
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation:fadeIn 5s;
+  position: relative;
+  width: 100%;
+  height: 90vh; /* Full viewport height */
+  background: url('../landing/background\ image.png') no-repeat center center/cover; /* Background image */
+  
+}
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 130px;
+  font-weight: 10;
+  font-family: "Crimson Text";
+  white-space: nowrap;
+  z-index: 2;
+}
+.brown-button {/* Dark brown color */
+  color: black;              /* White text color for contrast */
+  padding: 10px 20px;        /* Adds padding to make the button larger */
+  border: none;              /* Removes default border */      
+  font-size: 16px;           /* Adjusts the font size */
+  cursor: pointer;           /* Adds a pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  border:1px solid brown;
+  box-shadow: inset 0 0 0 0 black;
+  transition: ease-out 0.3s;
+}
+.brown-button:hover {
+  border:1px solid rgb(255, 255, 255);
+  box-shadow:inset 300px 0 0 0 black;
+  color:white;
+  cursor:pointer; 
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  animation:fadeIn 7s;
+
+}
+p{
+  font-family:athiti;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: white;
+}
+.arrow{
+  width: 6%;
+}
+#color {
+  color: #A0522D;
+}
+#gif{
+  width: 100%;
+  margin: 0.5px auto auto auto}
+article{
+    display: flex;
+    flex-direction: row;
+    align-content: space-evenly;
+    background-color:rgb(30, 26, 39) ;
+    padding: 20px;
+    animation: appearBottom linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 35%;
+}
+.left{
+  width: 45%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.left img{
+  width: 100%;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.right{
+  width: 55%;
+  padding: 20px;
+
+}
+footer{background-color:rgb(41, 41, 41);
+  padding: 30px;
+}
+footer p{
+  font-size: 15px;
+  color:white;
+  font-family:athiti;
+  }
+.contact{
+  display: flex;
+  justify-content: right;
+  }
+.contact img{
+  margin: 0% ;
+  padding-left: 20%;
+  padding-right: 20%;
+  width:100%;
+}
+section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgb(30, 26, 39);
+}
+section h2{
+  margin: auto;
+  padding: 20px;
+}
+#menu{
+  width: 37%;
+  margin: auto;
+  border: 1px solid black;
+}
+.gallery{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 20px;
+  margin: 20px;
+  margin-right: 42px;
+  animation: appearBottom linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 35%;
+}
+.gallery img{
+  width: 100%;
+  margin: auto;
+  border-radius: 10px;
+  border: 1px solid white;
+  animation: appearLeft linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 35%;
+}
+.container{
+  text-align: center;
+}
+.container h3{
+  padding: 10px;
+}
+@keyframes appearLeft{
+  from{
+    opacity:0;
+    transform: translateX(-200px);
+  }
+  to {
+    opacity:1;
+    transform: translateX(0px);
+  }
+}
+@keyframes fadeIn{
+  from{
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+@keyframes appearBottom{
+  from{
+    opacity:0;
+    transform: translateY(-200px);
+  }
+  to {
+    opacity:1;
+    transform: translateY(0px);
+  }
+}
+@media (max-width: 600px) {
+  .brown-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .button-container {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  p {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .arrow {
+    width: 10%;
+  }
+
+  #gif {
+    width: 100%;
+  }
+  .contact {
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .contact img {
+    padding-left: 0;
+    padding-right: 0;
+    width: 50px; /* Adjust as needed */
+    margin: 10px 0;
+  }
+}

@@ -1,0 +1,265 @@
+.crimson-text-regular {
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.crimson-text-semibold {
+font-family: "Crimson Text", serif;
+font-weight: 600;
+font-style: normal;
+}
+
+.crimson-text-bold {
+font-family: "Crimson Text", serif;
+font-weight: 700;
+font-style: normal;
+}
+
+.crimson-text-regular-italic {
+font-family: "Crimson Text", serif;
+font-weight: 400;
+font-style: italic;
+}
+
+.crimson-text-semibold-italic {
+font-family: "Crimson Text", serif;
+font-weight: 600;
+font-style: italic;
+}
+
+.crimson-text-bold-italic {
+font-family: "Crimson Text", serif;
+font-weight: 700;
+font-style: italic;
+}
+.athiti-extralight {
+font-family: "Athiti", sans-serif;
+font-weight: 200;
+font-style: normal;
+}
+
+.athiti-light {
+font-family: "Athiti", sans-serif;
+font-weight: 300;
+font-style: normal;
+}
+
+.athiti-regular {
+font-family: "Athiti", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.athiti-medium {
+font-family: "Athiti", sans-serif;
+font-weight: 500;
+font-style: normal;
+}
+
+.athiti-semibold {
+font-family: "Athiti", sans-serif;
+font-weight: 600;
+font-style: normal;
+}
+
+.athiti-bold {
+font-family: "Athiti", sans-serif;
+font-weight: 700;
+font-style: normal;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px;
+    background-color:rgb(30, 26, 39);;
+    font-family: athiti;
+}
+  
+nav img {
+height: 50px; 
+}
+
+.nav-links {
+display: flex;
+gap: 15px;
+font-family:athiti;
+}
+
+.nav-links a {
+color: white;
+text-decoration: none;
+font-size: 16px;
+padding: 8px 15px;
+border-radius: 5px;
+transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+background-color:#555;
+}
+#first{
+width: 100%;      /* Makes the image fill the width of its container */
+height: auto;     /* Adjusts height to maintain the image's aspect ratio */
+max-height: 510.9px; /* Limits the maximum height, adjust as needed */
+object-fit: cover; /* Crops the image to fill the height if necessary */
+}
+main {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.brown-button {
+background-color: #8B4513; /* Dark brown color */
+color: white;              /* White text color for contrast */
+padding: 10px 20px;        /* Adds padding to make the button larger */
+border: none;              /* Removes default border */
+border-radius: 5px;        /* Rounds the corners slightly */
+font-size: 16px;           /* Adjusts the font size */
+cursor: pointer;           /* Adds a pointer on hover */
+transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.brown-button:hover {
+background-color: #A0522D; /* Lighter brown on hover */
+}
+
+.button-container {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 20px;
+
+}
+p{
+font-family:athiti;
+margin-top: 30px;
+margin-bottom: 20px;
+color: white;
+}
+
+.titlecontainer{
+    position: relative;
+    width: 100%;
+    height: 70vh; /* Full viewport height */
+    background: url('../css/images/background\ image.jpeg') no-repeat center center/cover; /* Background image */
+}
+
+.titlecontainer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0); /* Start fully transparent */
+    z-index: 1; /* Place overlay above the background image */
+    animation: fadeIn 2s ease-out forwards; /* Smooth fade-in effect */
+  }
+
+
+@keyframes fadeIn {
+    0% {
+      background: rgba(0, 0, 0, 0); /* Fully transparent */
+    }
+    100% {
+      background: rgba(0, 0, 0, 0.4); /* Fully darkened */
+    }
+  }
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 130px;
+    font-weight: 10;
+    font-family: "Crimson Text";
+    white-space: nowrap;
+    z-index: 2;
+}
+
+main {
+    display: grid; /* Use CSS Grid */
+    grid-template-columns: 2fr 1fr; /* Two equal columns */
+    gap: 20px; /* Space between the columns */
+    background-color: rgb(30, 26, 39);
+    height: 90vh;
+}
+ 
+.left input, .left select, .left button{
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: #757575;
+    font-family: athiti;
+    margin-left: 43px;
+}
+
+.left button{
+    color: white;
+    background-color: #A0522D;
+    font-size: 15px;
+    width: 60%;
+    display: block; /* Ensures margin works */
+    margin: 0 auto; /* Centers the button horizontally */
+}
+
+.left, .right {
+    padding: 20px;
+}
+
+.left{
+    padding: 30px;
+    background-color: white;
+    height: 90vh;
+}
+ 
+form{
+    margin-top: 5px;
+}
+
+h3{
+    color: #8B4513;
+    font-size: 50px;
+    font-family:"crimson";
+}  
+
+p{
+    color: white;
+    font-family:athiti;
+    font-size: 17px;
+}
+
+footer{background-color:rgb(41, 41, 41);
+    padding: 30px;
+}
+footer p{
+    font-size: 15px;
+    color:white;
+    font-family:athiti;
+}
+.contact{
+    display: flex;
+    justify-content: right;
+}
+.contact img{
+    margin: 0% ;
+    padding-left: 20%;
+    padding-right: 20%;
+    width:100%;
+}

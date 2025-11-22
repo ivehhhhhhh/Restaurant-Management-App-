@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="logo" href="../reservation/css/images/logo spoon.png">
+    <title>Restaurant Reservation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../reservation/css/reservation.css">
+</head>
+<body>
+    <nav>
+        <img src="../reservation/css/images/logo spoon.png" alt="Logo">
+        <div class="nav-links">
+            <a href="../landing page.html">HOME</a>
+            <a href="../menu.html">MENU</a>
+            <a href="../about us.html">ABOUT US</a>
+            <a href="../reservation/reservation.html">RESERVATION</a>
+            <a href="../reservation/reservation_list.php">RESERVATION LIST</a>
+        </div>
+    </nav>
+    <div class="titlecontainer">
+        <div class="overlay"
+            <h2>Reservation</h2>
+        </div>
+    </div>
+    <main>
+        <div class="left">
+            <form action="reservation_process.php" method="POST">
+                <input type="text" name="no_ic" id="no_ic" placeholder="IC Number" required><br><br>
+
+                <input type="text" name="first_name" id="first_name" placeholder="First Name" required><br><br>
+
+                <input type="text" name="last_name" id="last_name" placeholder="Last Name" required><br><br>
+
+                <input type="text" name="hp_no" id="hp_no" placeholder="Phone Number" required><br><br>
+
+                <input type="number" name="guest_count" id="guest_count" placeholder="Number of Guests" required><br><br>
+
+                <select name="table_id" id="table_id" required>
+                    <option value="" disabled selected>Choose Table</option>
+                    <option value="001">Table 001 (Capacity: 2)</option>
+                    <option value="002">Table 002 (Capacity: 2)</option>
+                    <option value="003">Table 003 (Capacity: 2)</option>
+                    <option value="004">Table 004 (Capacity: 2)</option>
+                    <option value="005">Table 005 (Capacity: 2)</option>
+                    <option value="006">Table 006 (Capacity: 2)</option>
+                    <option value="007">Table 007 (Capacity: 2)</option>
+                    <option value="008">Table 008 (Capacity: 2)</option>
+                    <option value="009">Table 009 (Capacity: 4)</option>
+                    <option value="010">Table 010 (Capacity: 4)</option>
+                    <option value="011">Table 011 (Capacity: 4)</option>
+                    <option value="012">Table 012 (Capacity: 4)</option>
+                    <option value="013">Table 013 (Capacity: 4)</option>
+                    <option value="014">Table 014 (Capacity: 4)</option>
+                    <option value="015">Table 015 (Capacity: 5)</option>
+                    <option value="016">Table 016 (Capacity: 5)</option>
+                    <option value="017">Table 017 (Capacity: 5)</option>
+                    <option value="018">Table 018 (Capacity: 6)</option>
+                    <option value="019">Table 019 (Capacity: 6)</option>
+                    <option value="020">Table 020 (Capacity: 6)</option>
+                </select><br><br>
+
+                <input type="date" name="date_of_reservation" id="date_of_reservation" required><br><br>
+
+                <select id="time_of_reservation" name="time_of_reservation" id="time_of_reservation" required>
+                    <option value="" disabled selected>Reservation Time</option>
+                    <option value="9:00 AM">9:00 AM</option>
+                    <option value="11:00 AM">11:00 AM</option>
+                    <option value="1:00 PM">1:00 PM</option>
+                    <option value="3:00 PM">3:00 PM</option>
+                    <option value="5:00 PM">5:00 PM</option>
+                    <option value="7:00 PM">7:00 PM</option>
+                    <option value="9:00 PM">9:00 PM</option>
+                </select><br><br>
+
+                <button type="submit">Submit Reservation</button>
+            </form>
+        </div>
+        <div class="right">
+            <h3> <div style="color: white;">Yap</div>Restaurant</h3>
+            <p>50A, Changkat Bukit Bintang, Bukit Bintang, 50200 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur</p>
+            <p>Brunch (9:00 AM - 3:00 PM)</p>
+            <p>Dinner (5:00 PM - 11:00 PM)</p>
+            <p>+60 234441129</p>
+        </div>
+        
+    </main>
+    
+
+
+    <footer>
+        <div class="contact">
+            <div>
+                <a href="https://www.facebook.com/" target="_blank">
+                <img src="../reservation/css/images/facebook.png">
+            </a>
+            </div>
+            <div> 
+                <a href="https://x.com/" target="_blank">
+                <img src="../reservation/css/images/instagram.png">
+            </a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/" target="_blank">
+                <img src="../reservation/css/images/x.png">
+            </a>
+            </div>
+        </div>
+        <p>Copyright © 2024 Yap. All rights reserved.</p>
+        <p>Wong Yen Yuee | Justin Tan Jiing Wen | Ivy Tan Wei Yee | Myra Ting ZiQi </p>
+    </footer>
+</body>
+</html>
+
+

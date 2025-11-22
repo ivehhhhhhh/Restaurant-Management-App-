@@ -1,0 +1,145 @@
+<html>
+<head>
+<link rel="icon" type="logo" href="css/images/logo spoon.png">
+<title>About Us</title>
+<link rel="stylesheet" href="./about us/about us.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <img src="./about us/images/logo spoon.png" alt="Logo" id="navLogo">
+        <div class="nav-links">
+            <a href="./landing page.html">HOME</a>
+            <a href="./menu.html">MENU</a>
+            <a href="./about us.html">ABOUT US</a>
+            <a href="./reservation/reservation.html">RESERVATION</a>
+            <a href="./reservation/reservation_list.php">RESERVATION LIST</a>
+        </div>
+</nav>
+
+<div class="title">
+<h1>ABOUT YAP RESTAURANT</h1>
+<p id="subtitle">A MIDDLE EAST CUISINE</p>
+</div>
+<button data-modal-target="#modal" id="learn-more">AWARDS</button>
+<div class="modal" id="modal">
+    <div class="modal-header">
+    <div class="poptitle"><h6>AWARDS</h6></div>
+    <button data-close-button class="close-button">&times;</button>
+</div>
+<div class="modal-body">
+    <p id="modal-description">
+        <ol id="award-content">
+            <b><li><p id='award-title'>Culinary Excellence Award (2022)</p></b> Presented by the International Culinary Association, celebrating our innovative approach to Middle Eastern cuisine while preserving its traditional roots.</li>
+            <b><li><p id='award-title'>Best Fine Dining Experience (2021)</p></b> Awarded by Kuala Lumpur's Food & Beverage Society for our elegant ambiance and exceptional menu offerings.</li>
+            <b><li><p id='award-title'>Top 10 Restaurants in Malaysia (2020)</p></b> Recognized by FoodLovers Magazine for our authentic flavors and outstanding hospitality.</li>
+        </ol>
+    </p>
+</div>
+</div>
+<div id="overlay"></div>
+<div class="container">
+    <div class="mainContainer">
+    <div class="description">
+    <h5 id="des">MORE THAN 10 YEARS OF RICH TRADITION</h5>
+    <p id="titleD">
+    Experience and savour the authentic Middle-Eastern cuisines in the heart of Kuala Lumpur at Yap Restaurant. Our warm, inviting atmosphere reflects the charm and hospitality of Middle Eastern culture, making every meal not just a dining experience but an opportunity to create cherished memories with friends, family, and loved ones. Yap Restaurant is a perfect venue to host private events, exclusive parties and intimate weddings; creating memories that last a lifetime. 
+    </p>
+
+    </div>
+    <div class="imageContainer">
+        <img src="./about us/images/title image.webp" id="titleImg">
+        </div>
+    </div>
+    <div class="menu">
+    <div class="menuImg">
+        <img src="./about us/images/kebab.webp" id="kebab">
+    </div>
+    <div class="menuText">
+        <h5>OUR MENU</h5>
+        <p id="menuD">
+        Explore our diverse and delectable menu, carefully curated to offer something for every palate. From tender kebabs, aromatic rice dishes, and freshly baked pita breads to rich stews, refreshing salads, and indulgent desserts.
+        <br>
+        <br>
+    </p>
+        <a href="menu.html"><button id="menuBtn">VIEW MENU</button></a>
+        </div>
+    </div>
+    <div class="reservation">
+    <div class="reservationText">
+    <h5 id="myReservation">RESERVATION</h5> 
+    <p id="reservationD">
+    At Yap Restaurant, we understand that your time is precious, which is why we offer a seamless reservation process. Our easy-to-use online reservation system allows you to choose your preferred dining time, so you can spend more time enjoying your meal and less time waiting.
+    </p>
+    <a href="./reservation/reservation.html"><button id="reservationBtn">RESERVE NOW</button></a>
+    </div>
+    <div class="reservationImg">
+        <img src="./about us/images/seat.jpg" id="seat">
+    </div>
+    </div> 
+    </p>
+
+<div class="teamContent">
+    <h2>OUR TEAM</h2>
+    <p>Together, our dedicated team has poured their expertise and passion into creating a digital experience that not only reflects our commitment to quality and exceptional service but also enhances every aspect of your journey with us. From the moment you interact with our digital platform, you will notice how every detail has been thoughtfully crafted with you in mind. Whether it is making your reservation, browsing our menu, or discovering special offers, our goal is to provide a seamless and intuitive experience that complements the warm, welcoming atmosphere of Yap Restaurant.</p>
+
+</div>
+</div>
+<footer>
+    <div class="contact">
+        <div>
+            <a href="https://www.facebook.com/" target="_blank">
+            <img src="./about us/images/facebook.png">
+        </a>
+        </div>
+        <div> 
+            <a href="https://x.com/" target="_blank">
+            <img src="./about us/images/x.png">
+        </a>
+        </div>
+        <div>
+            <a href="https://www.instagram.com/" target="_blank">
+            <img src="./about us/images/instagram.png">
+        </a>
+        </div>
+    </div>
+    <p>Copyright © 2024 Yap. All rights reserved.</p>
+    <p>Wong Yen Yuee | Justin Tan Jiing Wen | Ivy Tan Wei Yee | Myra Ting ZiQi </p>
+</footer>
+<script>
+    const openModalButtons = document.querySelectorAll('[data-modal-target]')
+    const closeModalButtons = document.querySelectorAll('[data-close-button]')
+    const overlay=document.getElementById('overlay')
+
+    openModalButtons.forEach((button) =>{
+        button.addEventListener('click',()=>{
+            const modal=document.querySelector(button.dataset.modalTarget)
+            openModal(modal)
+        })
+    })
+    closeModalButtons.forEach((button) =>{
+        button.addEventListener('click',()=>{
+            const modal= button.closest('.modal')
+            closeModal(modal)
+            
+        })
+    })
+    
+
+    function openModal(modal){
+        if(modal==null) return
+        modal.classList.add('active')
+        overlay.classList.add('active')
+
+    }
+    function closeModal(modal){
+        if(modal==null) return
+        modal.classList.remove('active')
+        overlay.classList.remove('active')
+
+    }
+</script>
+</body>
+</html>
